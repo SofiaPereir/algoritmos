@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 03:06:13 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDI6NTM6MTAgIjszNTc0"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDM6MDY6MTMgIjsxOzM2ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IMC, peso, altura" type="Real" array="False" size=""/>
+            <input variable="peso"/>
+            <input variable="altura"/>
+            <assign variable="IMC" expression="peso/(altura^2)"/>
+            <output expression="IMC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:32:24 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjIzOjE2ICI7Mjc2Nw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjMyOjI0ICI7MTsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, h, p, d" type="Real" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="h"/>
+            <input variable="p"/>
+            <assign variable="d" expression="(b^2)+(h^2)+(p^2)"/>
+            <output expression="&quot;Diagonal: &quot; &amp;sqrt(d)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:30:16 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDQ6MjA6MDIgIjszNTcx"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDQ6MzA6MTYgIjsxOzM2ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="dia, mes, ano, idade" type="Integer" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="dia"/>
+            <input variable="mes"/>
+            <input variable="ano"/>
+            <assign variable="idade" expression="2024-ano"/>
+            <output expression="idade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

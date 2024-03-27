@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:10:44 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjA0OjIzICI7Mjc2Ng=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjEwOjQ0ICI7MTsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Vcomb, Kmpl, custo, dist" type="Real" array="False" size=""/>
+            <input variable="dist"/>
+            <input variable="Kmpl"/>
+            <assign variable="custo" expression="Vcomb*(dist/Kmpl)"/>
+            <output expression="custo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

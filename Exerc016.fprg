@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:52:19 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDQ6MzQ6MjMgIjszNTc5"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDQ6NTI6MTkgIjsxOzM2OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="ano"/>
+            <if expression="ano%4==0">
+                <then>
+                    <if expression="ano%100!=0">
+                        <then>
+                            <assign variable="mensagem" expression="&quot;esse ano &#233; bissexto&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="ano%400==0">
+                                <then>
+                                    <assign variable="mensagem" expression="&quot;esse ano &#233; bissexto&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="mensagem" expression="&quot;esse ano n&#227;o &#233; bissexto&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;esse ano n&#227;o &#233; bissexto&quot;"/>
+                </else>
+            </if>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

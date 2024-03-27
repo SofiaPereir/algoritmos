@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:56:11 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjQzOjMzICI7Mjc2OA=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjU2OjExICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="an, a, n, r" type="Real" array="False" size=""/>
+            <input variable="r"/>
+            <input variable="a"/>
+            <assign variable="n" expression="10"/>
+            <assign variable="an" expression="a+(n-1)*r"/>
+            <output expression="&quot;PA: &quot;&amp;an" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

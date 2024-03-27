@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:43:17 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjM0OjE3ICI7Mjc3MA=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjQzOjE3ICI7MTsyODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cata, cato, hip" type="Real" array="False" size=""/>
+            <input variable="cato"/>
+            <input variable="cata"/>
+            <assign variable="hip" expression="(cata^2)+(cato^2)"/>
+            <output expression="&quot;Hipotenusa: &quot;&amp;sqrt(Hip)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

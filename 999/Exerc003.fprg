@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:28:09 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA5OjAzOjMzICI7Mjc3Mg=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA5OjI4OjA5ICI7MTsyODkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Insira o &#226;ngulo em graus:&quot;" newline="True"/>
+            <declare name="n" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="&quot;Seno: &quot; &amp;sin(n)&amp; &quot; Cosseno: &quot; &amp;cos(n)&amp; &quot; Tangente: &quot; &amp;tan(n)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

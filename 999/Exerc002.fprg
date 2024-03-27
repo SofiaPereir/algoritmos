@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:03:30 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA4OjQzOjE0ICI7Mjc3NA=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA5OjAzOjMwICI7MTsyODc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, ant, suc" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="ant" expression="num-1"/>
+            <assign variable="suc" expression="num+1"/>
+            <output expression="&quot;Seu antecessor: &quot; &amp; ant&amp; &quot;, Seu sucessor: &quot; &amp; suc" newline="True"/>
+        </body>
+    </function>
+    <function name="substring" type="Integer" variable="dataform">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+            <parameter name="mes" type="Integer" array="False"/>
+            <parameter name="dia" type="Integer" array="False"/>
+            <parameter name="dataCompleta" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>

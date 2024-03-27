@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:41:32 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjM3OjU5ICI7Mjc4Mg=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjQxOjA2ICI7MTtnaW92YW5uYS5sdXo7TlQzNDsyMDI0LTAzLTA0OyIwMjo1NDoxMiAiO0Rlc2FmaW8wMjEuZnByZzs3MDEx"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjQxOjMyICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, dif, dif1" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="dif" expression="(num1-num2)^2"/>
+            <assign variable="dif1" expression="(num1)^2-(num2)^2"/>
+            <output expression="dif&amp;&quot; &quot;&amp;dif1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

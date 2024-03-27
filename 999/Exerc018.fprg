@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:37:41 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjA1OjExICI7Mjc2NQ=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjM3OjQxICI7MTsyODgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numa, numb, dena, denb, somaa, somab, multa, multb" type="Real" array="False" size=""/>
+            <input variable="numa"/>
+            <input variable="dena"/>
+            <input variable="numb"/>
+            <input variable="denb"/>
+            <assign variable="somaa" expression="(numa*denb+dena*numb)"/>
+            <assign variable="somab" expression="dena*denb"/>
+            <output expression="&quot;Soma: &quot; &amp;Somaa&amp; &quot;/&quot; &amp;somab" newline="True"/>
+            <assign variable="multa" expression="numa*numb"/>
+            <assign variable="multb" expression="dena*denb"/>
+            <output expression="&quot;Multiplica&#231;&#227;o: &quot;&amp;multa&amp;&quot;/&quot;&amp;multb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 02:52:45 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yNDsiMDQ6NDE6MTUgIjszNTcz"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtERVNLVE9QLUdMRzJLTUE7MjAyNC0wMS0yOTsiMDI6NTI6NDUgIjs5OzM2OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="Inic&#237;o do Algoritmo ENQUANTO"/>
+            <assign variable="c" expression="1"/>
+            <do expression="c&lt;=100">
+                <if expression="c%7==0">
+                    <then>
+                        <output expression="c" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="c+1"/>
+            </do>
+            <comment text="Fim do Algoritmo ENQUANTO&#13;&#10;"/>
+            <comment text="In&#237;cio do algoritmo FAZER"/>
+            <assign variable="b" expression="1"/>
+            <while expression="b&lt;=100">
+                <if expression="b%13==0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <comment text="Fim do Algoritmo FAZER"/>
+            <comment text="In&#237;cio do Algoritmo PARA"/>
+            <for variable="a" start="1" end="100" direction="inc" step="1">
+                <if expression="a%2!=0">
+                    <then>
+                        <if expression="a%3==0">
+                            <then>
+                                <output expression="a" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <comment text="Fim do Algoritmo PARA"/>
+        </body>
+    </function>
+</flowgorithm>

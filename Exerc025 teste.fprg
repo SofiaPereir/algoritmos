@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-07 05:12:22 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDItMDc7IjAzOjU2OjAxICI7Mjc3MQ=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDItMDc7IjA1OjEyOjIyICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="dias, salbase, inss, ir, basecal" type="Real" array="False" size=""/>
+            <declare name="sal" type="Integer" array="False" size=""/>
+            <input variable="salbase"/>
+            <input variable="dias"/>
+            <assign variable="sal" expression="(salbase*1/30)*dias"/>
+            <if expression="0&lt;=sal&gt;=1412">
+                <then>
+                    <assign variable="inss" expression="sal*0.075"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="1412.01&lt;=sal&gt;=2666.68">
+                <then>
+                    <assign variable="inss" expression="sal*0.09"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="2666.69&lt;=sal&gt;=4000.03">
+                <then>
+                    <assign variable="inss" expression="sal*0.12"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="4000.04&lt;=sal&gt;=7786.02">
+                <then>
+                    <assign variable="inss" expression="sal*0.14"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sal&gt;7786.02">
+                <then>
+                    <assign variable="inss" expression="908.86"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="basecal" expression="sal-inss"/>
+            <if expression="basecal&lt;=2112">
+                <then>
+                    <assign variable="ir" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="2112.01&lt;=basecal&gt;=2826.65">
+                <then>
+                    <assign variable="ir" expression="basecal*0.075"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="2826.66&lt;=basecal&gt;=3751.05">
+                <then>
+                    <assign variable="ir" expression="basecal*0.15"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="3751.06&lt;=basecal&gt;=4664.68">
+                <then>
+                    <assign variable="ir" expression="basecal*0.225"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="basecal&gt;4664.68">
+                <then>
+                    <assign variable="ir" expression="basecal*0.275"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="trans, ref, salliq" type="Real" array="False" size=""/>
+            <assign variable="trans" expression="sal*0.06"/>
+            <assign variable="ref" expression="sal*0.06"/>
+            <assign variable="sal" expression="sal-inss-ir-trans-ref"/>
+            <output expression="sal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

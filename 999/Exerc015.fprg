@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:01:17 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAyOjU2OjQxICI7Mjc3Mg=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjAxOjE3ICI7MTsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, r, v" type="Real" array="False" size=""/>
+            <input variable="h"/>
+            <input variable="r"/>
+            <assign variable="v" expression="&#960;*(r^2)*h"/>
+            <output expression="&quot;Volume: &quot; &amp;v" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

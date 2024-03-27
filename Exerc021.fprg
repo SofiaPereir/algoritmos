@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 02:44:52 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDItMDU7IjAxOjU3OjE3ICI7Mjc3NQ=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDItMDU7IjAyOjQ0OjUyICI7MTsyODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, media" type="Real" array="False" size=""/>
+            <declare name="aulas, faltas" type="Integer" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="faltas"/>
+            <assign variable="media" expression="((nota1*2)+(nota2*3)+(nota3*5))/(10)"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <if expression="faltas&lt;=25%100">
+                        <then>
+                            <output expression="&quot;Aprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Desaprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Desaprovado&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;M&#233;dia ponderada: &quot; &amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

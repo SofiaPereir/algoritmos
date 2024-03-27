@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 05:11:34 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjA0OjM3OjIxICI7Mjc3Mw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjA1OjExOjM0ICI7MTsyODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="ma, me" type="Real" array="False" size=""/>
+            <declare name="n" type="Real" array="True" size="10"/>
+            <assign variable="ma" expression="0"/>
+            <assign variable="me" expression="99999999"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="n[i]"/>
+                <if expression="n[i]&gt;ma">
+                    <then>
+                        <assign variable="ma" expression="n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="n[i]&lt;me">
+                    <then>
+                        <assign variable="me" expression="n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Maior: &quot;&amp;ma" newline="True"/>
+            <output expression="&quot;Menor: &quot;&amp;me" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

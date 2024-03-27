@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="maria.schenfeldt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 03:49:20 "/>
+        <attribute name="created" value="bWFyaWEuc2NoZW5mZWxkdDtOVDE2OzIwMjQtMDMtMDY7IjAyOjIxOjU4ICI7MzA3OQ=="/>
+        <attribute name="edited" value="bWFyaWEuc2NoZW5mZWxkdDtOVDE2OzIwMjQtMDMtMDY7IjAzOjQ4OjU3ICI7MjszMTk3"/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjAzOjQ5OjIwICI7MTsyODgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, p, m" type="Integer" array="False" size=""/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="m"/>
+            <for variable="i" start="3" end="m" direction="inc" step="1">
+                <if expression="m%2==0">
+                    <then>
+                        <assign variable="p" expression="b-a"/>
+                        <output expression="p" newline="True"/>
+                        <assign variable="a" expression="b"/>
+                        <assign variable="b" expression="p"/>
+                    </then>
+                    <else>
+                        <assign variable="p" expression="b+a"/>
+                        <output expression="p" newline="True"/>
+                        <assign variable="a" expression="b"/>
+                        <assign variable="b" expression="p"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 01:45:58 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjEwOjAxOjA2ICI7MjcwMQ=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjEwOjA2OjA0ICI7MTsyODEy"/>
+        <attribute name="edited" value="bWFyaWEuZ2lhcmV0dGE7TlQzMzsyMDI0LTAzLTA2OyIxMDowNzo1MyAiOzE7Mjk3Nw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjAxOjQ1OjU4ICI7MjsyODg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, a" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="a" start="25" end="200" direction="inc" step="1">
+                <if expression="a%2=0">
+                    <then>
+                        <assign variable="soma" expression="soma+a"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;A soma dos n&#250;meros pares entre 25 e 200 &#233;: &quot;&amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

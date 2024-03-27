@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:56:38 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAyOjAwOjQxICI7Mjc2MQ=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAyOjU2OjM4ICI7MTsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tc, tf" type="Real" array="False" size=""/>
+            <output expression="&quot;temperatura em centigrados:&quot;" newline="True"/>
+            <input variable="tc"/>
+            <assign variable="tf" expression="(9/5*tc)+32"/>
+            <output expression="&quot;Temperatura em Fahrenheit: &quot;&amp;tf" newline="True"/>
+            <output expression="&quot;temperatura em fahrenheit:&quot;" newline="True"/>
+            <input variable="tf"/>
+            <assign variable="tc" expression="(5/9)*(tf-32)"/>
+            <output expression="&quot;Temperatura em centigrados: &quot; &amp;tc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:41:58 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjMzOjEzICI7Mjc2Nw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjQxOjU4ICI7MTsyODgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, ab, ba" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o valor a:&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="ab" expression="a"/>
+            <output expression="&quot;Insira o valor b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="ba" expression="b"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="ab"/>
+            <output expression="&quot;a= &quot; &amp;a" newline="True"/>
+            <output expression="&quot;b= &quot; &amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

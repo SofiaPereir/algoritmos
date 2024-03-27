@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:19:41 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMDg6NDQ6MTIgIjsyNzAw"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMDg6NDg6MTYgIjsyO2dpb3Zhbm5hLmx1ejtOVDM0OzIwMjQtMDMtMDY7IjA4OjEyOjI4ICI7RGVzYWZpbzAyNi5mcHJnOzY5NjU="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMDg6NDg6MzkgIjsxOzI4MjE="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjEwOjE5OjQxICI7MjsyODgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nA, nB, nC" type="Integer" array="False" size=""/>
+            <input variable="nA"/>
+            <input variable="nB"/>
+            <input variable="nC"/>
+            <if expression="(nA+nB)&gt;nC">
+                <then>
+                    <output expression="&quot;&#233; possivel formar um triangulo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;n&#227;o &#233; possivel formar um triangulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

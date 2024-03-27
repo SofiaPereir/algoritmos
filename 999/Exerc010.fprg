@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:34:14 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjMyOjI2ICI7Mjc2OA=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAxOjM0OjE0ICI7MTsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, h, a" type="Real" array="False" size=""/>
+            <assign variable="a" expression="b*h/2"/>
+            <output expression="&quot;&#193;rea: &quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

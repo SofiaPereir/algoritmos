@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:43:02 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjQyOjI3ICI7Mjc3Mw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjQyOjI5ICI7MTtHYWJyaWVsLkxvcGVzO05UMzU7MjAyNC0wMy0wNDsiMDM6NDg6MTUgIjtEZXNhZmlvMDIyLmZwcmc7NzAzNw=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjQzOjAyICI7MTsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nd, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="nd" expression="n*(n-3)/2"/>
+            <output expression="nd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

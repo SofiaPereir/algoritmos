@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:03:01 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjAzOjQzOjU3ICI7Mjc3Ng=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDQ7IjA0OjAzOjAxICI7MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, ma, mm" type="Integer" array="False" size=""/>
+            <input variable="h"/>
+            <input variable="ma"/>
+            <assign variable="mm" expression="(h*60)+ma"/>
+            <output expression="mm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

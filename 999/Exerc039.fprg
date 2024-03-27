@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sofia.pereira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:36:45 "/>
+        <attribute name="created" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjAzOjUxOjEwICI7Mjc2Ng=="/>
+        <attribute name="edited" value="c29maWEucGVyZWlyYTtOVDE1OzIwMjQtMDMtMDY7IjA0OjM2OjQ1ICI7MTsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, soma" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="True" size="20"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="i" start="0" end="19" direction="inc" step="1">
+                <input variable="n[i]"/>
+                <if expression="n[i]^2&lt;225">
+                    <then>
+                        <assign variable="soma" expression="soma+n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
